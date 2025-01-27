@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .container .item {
+            padding: 10px;
+            flex: 1;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .grid-container .item {
+            padding: 10px;
+            background-color: rgb(136, 255, 184);
+            flex: 1;
+        }
+        /*tablet style */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .grid-container {
+                grid-template-columns: 1fr 1fr;
+            }      
+        }
+        /*mobile style */
+        @media screen and (max-width: 640px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }      
+        }
+
+    </style>
+</head>
+<body>
+   
+</body>
+</html>
