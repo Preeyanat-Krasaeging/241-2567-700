@@ -1,0 +1,21 @@
+docker run -p 80:80 nginx //
+docker rm 
+docker ps --all
+docker run -d -p 8070:80 nginx
+http://localhost:8070/
+
+ls // list files
+pwd // print working directory
+cd // change directory
+cat // print file content
+cd .. // go backcd
+exit // exit container
+docker stop <container_id> // stop container
+
+docker system prune // remove all stopped containers
+
+docker-compose up -p
+docker-compose down
+
+npm i body-parser
+npx nodemon index.js     
