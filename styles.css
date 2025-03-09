@@ -10,7 +10,7 @@ body {
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(187, 255, 223);
+    background-color: #A3FFD6;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -40,7 +40,24 @@ textarea {
     border: 0;
     width: 50%;
     height: 40px;
+    background-color: #7BC9FF;
 }
+.message {
+    margin-buttom: 20px;
+    padding: 10px;
+    background-color: rgb(238, 144, 255);
+    display: none;
+}
+
+.message.success {
+    background-color: rgb(154, 213, 255);
+    display: block;
+}
+.message.danger {
+    background-color: rgb(255, 143, 143);
+    display: block;
+}
+
 @media screen and (max-width: 768px) {
     .flex {
         flex-direction: column;
